@@ -65,11 +65,11 @@ jobs:
 
       - name: Download SpotBugs CLI + FindSecBugs Rule Pack
         run: |
-          wget -O spotbugs.tgz https://github.com/spotbugs/spotbugs/releases/download/4.9.3/spotbugs-4.9.3.tgz
+          wget -O spotbugs.tgz https://github.com/spotbugs/spotbugs/releases/download/4.9.8/spotbugs-4.9.8.tgz
           tar -xzf spotbugs.tgz
           mv spotbugs-*/ spotbugs/
 
-          wget -O findsecbugs.jar https://search.maven.org/remotecontent?filepath=com/h3xstream/findsecbugs/findsecbugs-plugin/1.12.0/findsecbugs-plugin-1.12.0.jar
+          wget -O findsecbugs.jar https://search.maven.org/remotecontent?filepath=com/h3xstream/findsecbugs/findsecbugs-plugin/1.14.0/findsecbugs-plugin-1.14.0.jar
           mv findsecbugs.jar spotbugs/plugin/.
 
       # todo check hash and cache
