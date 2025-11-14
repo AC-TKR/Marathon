@@ -112,7 +112,7 @@ jobs:
         run: touch .truffleignore
 
       - name: "Secret Scan with Trufflehog"
-        uses: trufflesecurity/trufflehog@acb6aeefd6e2498240d0418e63f69684d28337e7b
+        uses: trufflesecurity/trufflehog@cb6aeefd6e2498240d0418e63f69684d28337e7b
         continue-on-error: true # adjust on your needs to automatically fail or move to a separate workflow if needed
         with: # exclusions in .truffleignore file
           # Repository path
